@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0DFDFA27E55373000FDCDC /* PostsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFDF927E55373000FDCDC /* PostsListViewModelTests.swift */; };
+		8E0DFE0327E55439000FDCDC /* PostServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFE0227E55439000FDCDC /* PostServiceMock.swift */; };
+		8E0DFE0527E562BE000FDCDC /* DatabaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DFE0427E562BE000FDCDC /* DatabaseMock.swift */; };
+		8E0DFE0B27E5787B000FDCDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DFE0A27E5787B000FDCDC /* Preview Assets.xcassets */; };
+		8E13601E27E2EC7A000CBCA6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13601D27E2EC7A000CBCA6 /* BaseView.swift */; };
+		8E19AD7027E50E0B0007FB52 /* Alert+EverlyWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19AD6F27E50E0B0007FB52 /* Alert+EverlyWell.swift */; };
+		8E19AD7227E5116C0007FB52 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19AD7127E5116C0007FB52 /* BaseViewModel.swift */; };
+		8E287BD927E0FC800051E766 /* PostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BD827E0FC800051E766 /* PostsRouter.swift */; };
+		8E287BDB27E0FDC50051E766 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BDA27E0FDC50051E766 /* URLSession.swift */; };
+		8E287BDD27E0FDF60051E766 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BDC27E0FDF60051E766 /* APIResponse.swift */; };
+		8E287BDF27E0FE7C0051E766 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BDE27E0FE7C0051E766 /* APIError.swift */; };
+		8E287BE127E102C20051E766 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BE027E102C20051E766 /* PostService.swift */; };
+		8E287BE727E106AF0051E766 /* PostsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BE627E106AF0051E766 /* PostsListViewModel.swift */; };
+		8E287BE927E1121A0051E766 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BE827E1121A0051E766 /* PostDetailViewModel.swift */; };
+		8E287BEB27E113AF0051E766 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BEA27E113AF0051E766 /* Author.swift */; };
+		8E287BF027E115A20051E766 /* AuthorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BEF27E115A20051E766 /* AuthorRouter.swift */; };
+		8E287BF227E1185A0051E766 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BF127E1185A0051E766 /* Comment.swift */; };
+		8E287BF427E11E850051E766 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BF327E11E850051E766 /* CommentsViewModel.swift */; };
+		8E287BF727E121AB0051E766 /* CommentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BF627E121AB0051E766 /* CommentsListView.swift */; };
+		8E287BF927E1221C0051E766 /* CommentListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BF827E1221C0051E766 /* CommentListRow.swift */; };
+		8E287BFC27E12B6E0051E766 /* DatabaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BFB27E12B6E0051E766 /* DatabaseEntity.swift */; };
+		8E287BFE27E12BA90051E766 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BFD27E12BA90051E766 /* Database.swift */; };
+		8E287C0027E12C830051E766 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287BFF27E12C830051E766 /* DatabaseManager.swift */; };
+		8E287C0327E12D640051E766 /* PostDatabaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287C0227E12D640051E766 /* PostDatabaseEntity.swift */; };
+		8E287C0827E13A470051E766 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8E287C0727E13A470051E766 /* Realm */; };
+		8E287C0A27E13A470051E766 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8E287C0927E13A470051E766 /* RealmSwift */; };
+		8E287C0C27E140540051E766 /* AuthorDatabaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287C0B27E140540051E766 /* AuthorDatabaseEntity.swift */; };
+		8E287C0E27E1408B0051E766 /* CommentDatabaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287C0D27E1408B0051E766 /* CommentDatabaseEntity.swift */; };
+		8E287C1327E280900051E766 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E287C1227E280900051E766 /* Colors.xcassets */; };
+		8E287C1727E2C6490051E766 /* Color+EverlyWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287C1627E2C6490051E766 /* Color+EverlyWell.swift */; };
+		8E287C1A27E2DDAC0051E766 /* CommentListView+Maker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287C1927E2DDAC0051E766 /* CommentListView+Maker.swift */; };
+		8E287C1E27E2E9660051E766 /* Image+EverlyWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E287C1D27E2E9660051E766 /* Image+EverlyWell.swift */; };
+		8E5AD16027E44E6100B9FFC2 /* View+EverlyWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5AD15F27E44E6100B9FFC2 /* View+EverlyWell.swift */; };
+		8EC248A127DFED3100FCF7E0 /* PostsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248A027DFED3100FCF7E0 /* PostsApp.swift */; };
+		8EC248A527DFED3300FCF7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC248A427DFED3300FCF7E0 /* Assets.xcassets */; };
+		8EC248B027DFED6100FCF7E0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248AF27DFED6100FCF7E0 /* Post.swift */; };
+		8EC248BA27DFEFAB00FCF7E0 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248B927DFEFAB00FCF7E0 /* PostsListView.swift */; };
+		8EC248BE27DFF27700FCF7E0 /* PostsListView+Maker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248BD27DFF27700FCF7E0 /* PostsListView+Maker.swift */; };
+		8EC248C127DFF56700FCF7E0 /* PostsListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248C027DFF56700FCF7E0 /* PostsListRow.swift */; };
+		8EC248C827DFF6FC00FCF7E0 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248C727DFF6FC00FCF7E0 /* PostDetailView.swift */; };
+		8EC248CC27DFF71D00FCF7E0 /* PostDetailView+Maker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248CB27DFF71D00FCF7E0 /* PostDetailView+Maker.swift */; };
+		8EC248D127DFFDB000FCF7E0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248D027DFFDB000FCF7E0 /* APIService.swift */; };
+		8EC248D327DFFF6800FCF7E0 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248D227DFFF6800FCF7E0 /* APIRequest.swift */; };
+		8EC248D527DFFF8300FCF7E0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248D427DFFF8300FCF7E0 /* HTTPMethod.swift */; };
+		8EC248D927E0000500FCF7E0 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC248D827E0000500FCF7E0 /* Parameter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E0DFDFB27E55373000FDCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EC2489527DFED3100FCF7E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EC2489C27DFED3100FCF7E0;
+			remoteInfo = Posts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E0DFDF727E55373000FDCDC /* PostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0DFDF927E55373000FDCDC /* PostsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModelTests.swift; sourceTree = "<group>"; };
+		8E0DFE0227E55439000FDCDC /* PostServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceMock.swift; sourceTree = "<group>"; };
+		8E0DFE0427E562BE000FDCDC /* DatabaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseMock.swift; sourceTree = "<group>"; };
+		8E0DFE0A27E5787B000FDCDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E13601D27E2EC7A000CBCA6 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8E19AD6F27E50E0B0007FB52 /* Alert+EverlyWell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+EverlyWell.swift"; sourceTree = "<group>"; };
+		8E19AD7127E5116C0007FB52 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8E19AD7327E5163A0007FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E287BD827E0FC800051E766 /* PostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRouter.swift; sourceTree = "<group>"; };
+		8E287BDA27E0FDC50051E766 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		8E287BDC27E0FDF60051E766 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		8E287BDE27E0FE7C0051E766 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8E287BE027E102C20051E766 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		8E287BE627E106AF0051E766 /* PostsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewModel.swift; sourceTree = "<group>"; };
+		8E287BE827E1121A0051E766 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		8E287BEA27E113AF0051E766 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		8E287BEF27E115A20051E766 /* AuthorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorRouter.swift; sourceTree = "<group>"; };
+		8E287BF127E1185A0051E766 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		8E287BF327E11E850051E766 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		8E287BF627E121AB0051E766 /* CommentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsListView.swift; sourceTree = "<group>"; };
+		8E287BF827E1221C0051E766 /* CommentListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListRow.swift; sourceTree = "<group>"; };
+		8E287BFB27E12B6E0051E766 /* DatabaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseEntity.swift; sourceTree = "<group>"; };
+		8E287BFD27E12BA90051E766 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		8E287BFF27E12C830051E766 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		8E287C0227E12D640051E766 /* PostDatabaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDatabaseEntity.swift; sourceTree = "<group>"; };
+		8E287C0B27E140540051E766 /* AuthorDatabaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorDatabaseEntity.swift; sourceTree = "<group>"; };
+		8E287C0D27E1408B0051E766 /* CommentDatabaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDatabaseEntity.swift; sourceTree = "<group>"; };
+		8E287C1227E280900051E766 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8E287C1627E2C6490051E766 /* Color+EverlyWell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+EverlyWell.swift"; sourceTree = "<group>"; };
+		8E287C1927E2DDAC0051E766 /* CommentListView+Maker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentListView+Maker.swift"; sourceTree = "<group>"; };
+		8E287C1D27E2E9660051E766 /* Image+EverlyWell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+EverlyWell.swift"; sourceTree = "<group>"; };
+		8E5AD15F27E44E6100B9FFC2 /* View+EverlyWell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+EverlyWell.swift"; sourceTree = "<group>"; };
+		8EC2489D27DFED3100FCF7E0 /* Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Posts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC248A027DFED3100FCF7E0 /* PostsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsApp.swift; sourceTree = "<group>"; };
+		8EC248A427DFED3300FCF7E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EC248AF27DFED6100FCF7E0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8EC248B927DFEFAB00FCF7E0 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		8EC248BD27DFF27700FCF7E0 /* PostsListView+Maker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsListView+Maker.swift"; sourceTree = "<group>"; };
+		8EC248C027DFF56700FCF7E0 /* PostsListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListRow.swift; sourceTree = "<group>"; };
+		8EC248C727DFF6FC00FCF7E0 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		8EC248CB27DFF71D00FCF7E0 /* PostDetailView+Maker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailView+Maker.swift"; sourceTree = "<group>"; };
+		8EC248D027DFFDB000FCF7E0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8EC248D227DFFF6800FCF7E0 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		8EC248D427DFFF8300FCF7E0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8EC248D827E0000500FCF7E0 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E0DFDF427E55373000FDCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC2489A27DFED3100FCF7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E287C0A27E13A470051E766 /* RealmSwift in Frameworks */,
+				8E287C0827E13A470051E766 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E0DFDF827E55373000FDCDC /* PostsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DFE0027E55416000FDCDC /* Mocks */,
+				8E0DFDF927E55373000FDCDC /* PostsListViewModelTests.swift */,
+			);
+			path = PostsTests;
+			sourceTree = "<group>";
+		};
+		8E0DFE0027E55416000FDCDC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DFE0127E55421000FDCDC /* Services */,
+				8E0DFE0427E562BE000FDCDC /* DatabaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8E0DFE0127E55421000FDCDC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DFE0227E55439000FDCDC /* PostServiceMock.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E0DFE0927E57869000FDCDC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DFE0A27E5787B000FDCDC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E287BE227E102CC0051E766 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E287BE027E102C20051E766 /* PostService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E287BE527E106980051E766 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8E19AD7127E5116C0007FB52 /* BaseViewModel.swift */,
+				8E287BE627E106AF0051E766 /* PostsListViewModel.swift */,
+				8E287BE827E1121A0051E766 /* PostDetailViewModel.swift */,
+				8E287BF327E11E850051E766 /* CommentsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8E287BEE27E1140B0051E766 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8E287BD827E0FC800051E766 /* PostsRouter.swift */,
+				8E287BEF27E115A20051E766 /* AuthorRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8E287BF527E121980051E766 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				8E287BF627E121AB0051E766 /* CommentsListView.swift */,
+				8E287BF827E1221C0051E766 /* CommentListRow.swift */,
+				8E287C1927E2DDAC0051E766 /* CommentListView+Maker.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		8E287BFA27E12B5D0051E766 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8E287C0127E12D310051E766 /* Models */,
+				8E287BFB27E12B6E0051E766 /* DatabaseEntity.swift */,
+				8E287BFD27E12BA90051E766 /* Database.swift */,
+				8E287BFF27E12C830051E766 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8E287C0127E12D310051E766 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E287C0227E12D640051E766 /* PostDatabaseEntity.swift */,
+				8E287C0B27E140540051E766 /* AuthorDatabaseEntity.swift */,
+				8E287C0D27E1408B0051E766 /* CommentDatabaseEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E287C1827E2C7FE0051E766 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8E287C1C27E2E9500051E766 /* Shared */,
+				8EC248B227DFEE1A00FCF7E0 /* PostsList */,
+				8EC248C227DFF6B600FCF7E0 /* PostDetail */,
+				8E13601D27E2EC7A000CBCA6 /* BaseView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8E287C1C27E2E9500051E766 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8E5AD15F27E44E6100B9FFC2 /* View+EverlyWell.swift */,
+				8E287C1627E2C6490051E766 /* Color+EverlyWell.swift */,
+				8E287C1D27E2E9660051E766 /* Image+EverlyWell.swift */,
+				8E19AD6F27E50E0B0007FB52 /* Alert+EverlyWell.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8EC2489427DFED3100FCF7E0 = {
+			isa = PBXGroup;
+			children = (
+				8EC2489F27DFED3100FCF7E0 /* Posts */,
+				8E0DFDF827E55373000FDCDC /* PostsTests */,
+				8EC2489E27DFED3100FCF7E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC2489E27DFED3100FCF7E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EC2489D27DFED3100FCF7E0 /* Posts.app */,
+				8E0DFDF727E55373000FDCDC /* PostsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EC2489F27DFED3100FCF7E0 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				8E19AD7327E5163A0007FB52 /* Info.plist */,
+				8EC248A427DFED3300FCF7E0 /* Assets.xcassets */,
+				8E287C1227E280900051E766 /* Colors.xcassets */,
+				8E287BFA27E12B5D0051E766 /* Database */,
+				8EC248AE27DFED4D00FCF7E0 /* Models */,
+				8EC248CF27DFFD9A00FCF7E0 /* Networking */,
+				8EC248A027DFED3100FCF7E0 /* PostsApp.swift */,
+				8E0DFE0927E57869000FDCDC /* Preview Content */,
+				8E287C1827E2C7FE0051E766 /* UI */,
+				8E287BE527E106980051E766 /* ViewModels */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		8EC248AE27DFED4D00FCF7E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EC248AF27DFED6100FCF7E0 /* Post.swift */,
+				8E287BEA27E113AF0051E766 /* Author.swift */,
+				8E287BF127E1185A0051E766 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EC248B227DFEE1A00FCF7E0 /* PostsList */ = {
+			isa = PBXGroup;
+			children = (
+				8EC248B927DFEFAB00FCF7E0 /* PostsListView.swift */,
+				8EC248C027DFF56700FCF7E0 /* PostsListRow.swift */,
+				8EC248BD27DFF27700FCF7E0 /* PostsListView+Maker.swift */,
+			);
+			path = PostsList;
+			sourceTree = "<group>";
+		};
+		8EC248C227DFF6B600FCF7E0 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8E287BF527E121980051E766 /* Comments */,
+				8EC248C727DFF6FC00FCF7E0 /* PostDetailView.swift */,
+				8EC248CB27DFF71D00FCF7E0 /* PostDetailView+Maker.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		8EC248CF27DFFD9A00FCF7E0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E287BEE27E1140B0051E766 /* Router */,
+				8E287BE227E102CC0051E766 /* Services */,
+				8EC248D627DFFFDC00FCF7E0 /* Models */,
+				8E287BDA27E0FDC50051E766 /* URLSession.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8EC248D627DFFFDC00FCF7E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E287BDE27E0FE7C0051E766 /* APIError.swift */,
+				8EC248D227DFFF6800FCF7E0 /* APIRequest.swift */,
+				8E287BDC27E0FDF60051E766 /* APIResponse.swift */,
+				8EC248D027DFFDB000FCF7E0 /* APIService.swift */,
+				8EC248D427DFFF8300FCF7E0 /* HTTPMethod.swift */,
+				8EC248D827E0000500FCF7E0 /* Parameter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E0DFDF627E55373000FDCDC /* PostsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0DFDFD27E55373000FDCDC /* Build configuration list for PBXNativeTarget "PostsTests" */;
+			buildPhases = (
+				8E0DFDF327E55373000FDCDC /* Sources */,
+				8E0DFDF427E55373000FDCDC /* Frameworks */,
+				8E0DFDF527E55373000FDCDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E0DFDFC27E55373000FDCDC /* PBXTargetDependency */,
+			);
+			name = PostsTests;
+			productName = PostsTests;
+			productReference = 8E0DFDF727E55373000FDCDC /* PostsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EC2489C27DFED3100FCF7E0 /* Posts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC248AB27DFED3300FCF7E0 /* Build configuration list for PBXNativeTarget "Posts" */;
+			buildPhases = (
+				8EC2489927DFED3100FCF7E0 /* Sources */,
+				8EC2489A27DFED3100FCF7E0 /* Frameworks */,
+				8EC2489B27DFED3100FCF7E0 /* Resources */,
+				8E0DFDF227E53FFC000FDCDC /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Posts;
+			packageProductDependencies = (
+				8E287C0727E13A470051E766 /* Realm */,
+				8E287C0927E13A470051E766 /* RealmSwift */,
+			);
+			productName = Posts;
+			productReference = 8EC2489D27DFED3100FCF7E0 /* Posts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EC2489527DFED3100FCF7E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					8E0DFDF627E55373000FDCDC = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8EC2489C27DFED3100FCF7E0;
+					};
+					8EC2489C27DFED3100FCF7E0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 8EC2489827DFED3100FCF7E0 /* Build configuration list for PBXProject "Posts" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EC2489427DFED3100FCF7E0;
+			packageReferences = (
+				8E287C0627E13A470051E766 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 8EC2489E27DFED3100FCF7E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EC2489C27DFED3100FCF7E0 /* Posts */,
+				8E0DFDF627E55373000FDCDC /* PostsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E0DFDF527E55373000FDCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC2489B27DFED3100FCF7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E287C1327E280900051E766 /* Colors.xcassets in Resources */,
+				8E0DFE0B27E5787B000FDCDC /* Preview Assets.xcassets in Resources */,
+				8EC248A527DFED3300FCF7E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E0DFDF227E53FFC000FDCDC /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E0DFDF327E55373000FDCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0DFDFA27E55373000FDCDC /* PostsListViewModelTests.swift in Sources */,
+				8E0DFE0327E55439000FDCDC /* PostServiceMock.swift in Sources */,
+				8E0DFE0527E562BE000FDCDC /* DatabaseMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC2489927DFED3100FCF7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E287BE127E102C20051E766 /* PostService.swift in Sources */,
+				8E287BF227E1185A0051E766 /* Comment.swift in Sources */,
+				8E287BF927E1221C0051E766 /* CommentListRow.swift in Sources */,
+				8EC248D527DFFF8300FCF7E0 /* HTTPMethod.swift in Sources */,
+				8E287C0327E12D640051E766 /* PostDatabaseEntity.swift in Sources */,
+				8E287C0027E12C830051E766 /* DatabaseManager.swift in Sources */,
+				8EC248C127DFF56700FCF7E0 /* PostsListRow.swift in Sources */,
+				8E287BE727E106AF0051E766 /* PostsListViewModel.swift in Sources */,
+				8E287BDB27E0FDC50051E766 /* URLSession.swift in Sources */,
+				8E287BF427E11E850051E766 /* CommentsViewModel.swift in Sources */,
+				8E287BFC27E12B6E0051E766 /* DatabaseEntity.swift in Sources */,
+				8E287C1A27E2DDAC0051E766 /* CommentListView+Maker.swift in Sources */,
+				8EC248BE27DFF27700FCF7E0 /* PostsListView+Maker.swift in Sources */,
+				8E287BDF27E0FE7C0051E766 /* APIError.swift in Sources */,
+				8E287BF727E121AB0051E766 /* CommentsListView.swift in Sources */,
+				8E287BDD27E0FDF60051E766 /* APIResponse.swift in Sources */,
+				8E287BE927E1121A0051E766 /* PostDetailViewModel.swift in Sources */,
+				8EC248BA27DFEFAB00FCF7E0 /* PostsListView.swift in Sources */,
+				8EC248B027DFED6100FCF7E0 /* Post.swift in Sources */,
+				8E287BEB27E113AF0051E766 /* Author.swift in Sources */,
+				8EC248CC27DFF71D00FCF7E0 /* PostDetailView+Maker.swift in Sources */,
+				8EC248D927E0000500FCF7E0 /* Parameter.swift in Sources */,
+				8E287BFE27E12BA90051E766 /* Database.swift in Sources */,
+				8E5AD16027E44E6100B9FFC2 /* View+EverlyWell.swift in Sources */,
+				8EC248C827DFF6FC00FCF7E0 /* PostDetailView.swift in Sources */,
+				8EC248A127DFED3100FCF7E0 /* PostsApp.swift in Sources */,
+				8E19AD7227E5116C0007FB52 /* BaseViewModel.swift in Sources */,
+				8E287C0C27E140540051E766 /* AuthorDatabaseEntity.swift in Sources */,
+				8E287C0E27E1408B0051E766 /* CommentDatabaseEntity.swift in Sources */,
+				8E287C1E27E2E9660051E766 /* Image+EverlyWell.swift in Sources */,
+				8EC248D127DFFDB000FCF7E0 /* APIService.swift in Sources */,
+				8E287C1727E2C6490051E766 /* Color+EverlyWell.swift in Sources */,
+				8E287BD927E0FC800051E766 /* PostsRouter.swift in Sources */,
+				8EC248D327DFFF6800FCF7E0 /* APIRequest.swift in Sources */,
+				8E13601E27E2EC7A000CBCA6 /* BaseView.swift in Sources */,
+				8E287BF027E115A20051E766 /* AuthorRouter.swift in Sources */,
+				8E19AD7027E50E0B0007FB52 /* Alert+EverlyWell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E0DFDFC27E55373000FDCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EC2489C27DFED3100FCF7E0 /* Posts */;
+			targetProxy = 8E0DFDFB27E55373000FDCDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8E0DFDFE27E55373000FDCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVKK92K4M5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everlyhealth.PostsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Posts.app/Posts";
+			};
+			name = Debug;
+		};
+		8E0DFDFF27E55373000FDCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KVKK92K4M5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everlyhealth.PostsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Posts.app/Posts";
+			};
+			name = Release;
+		};
+		8EC248A927DFED3300FCF7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EC248AA27DFED3300FCF7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EC248AC27DFED3300FCF7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Posts/Preview Content\"";
+				DEVELOPMENT_TEAM = KVKK92K4M5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Posts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everlyhealth.Posts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EC248AD27DFED3300FCF7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Posts/Preview Content\"";
+				DEVELOPMENT_TEAM = KVKK92K4M5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Posts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everlyhealth.Posts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E0DFDFD27E55373000FDCDC /* Build configuration list for PBXNativeTarget "PostsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0DFDFE27E55373000FDCDC /* Debug */,
+				8E0DFDFF27E55373000FDCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC2489827DFED3100FCF7E0 /* Build configuration list for PBXProject "Posts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC248A927DFED3300FCF7E0 /* Debug */,
+				8EC248AA27DFED3300FCF7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC248AB27DFED3300FCF7E0 /* Build configuration list for PBXNativeTarget "Posts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC248AC27DFED3300FCF7E0 /* Debug */,
+				8EC248AD27DFED3300FCF7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E287C0627E13A470051E766 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E287C0727E13A470051E766 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E287C0627E13A470051E766 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8E287C0927E13A470051E766 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E287C0627E13A470051E766 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8EC2489527DFED3100FCF7E0 /* Project object */;
+}
